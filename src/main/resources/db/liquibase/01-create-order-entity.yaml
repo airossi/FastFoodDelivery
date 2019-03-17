@@ -1,0 +1,26 @@
+databaseChangeLog:
+- changeSet:
+    id: order-1
+    author: damian.blanco
+    comment: "Table order"
+    changes:
+    - createTable:
+        tableName: food_order
+        columns:
+        - column:
+            name: id
+            type: int
+            autoIncrement: true
+            constraints:
+              primaryKey: true
+              nullable: false
+        - column:
+            name: description
+            type: varchar(255)
+            constraints:
+              nullable: false
+        - column:
+            name: price
+            type: varchar(10)
+            constraints:
+              nullable: false
