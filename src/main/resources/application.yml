@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: local
+  liquibase:
+    change-log: classpath:db/liquibase-changelog.yaml
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  servlet:
+    context-path: /api
